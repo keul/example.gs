@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<import-steps>
+ <!--import-step id="example.gs" version="20130427-01"
+              handler="example.gs.setuphandlers.setupVarious"
+              title="example.gs - various import steps">
+    <dependency step="propertiestool"/>
+     Various import steps
+ </import-step-->
+</import-steps>

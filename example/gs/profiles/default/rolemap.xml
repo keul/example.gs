@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<rolemap>
+  <permissions>
+    <permission name="example.gs: Add ExampleType" acquire="False">
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Contributor" />
+    </permission>
+  </permissions>
+</rolemap>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<atcttool xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <topic_indexes>
+  <index name="getFoo"
+     description="A really dumb field" enabled="True"
+     friendlyName="Foo">
+   <criteria>ATSimpleStringCriterion</criteria>
+   <criteria>ATListCriterion</criteria>
+  </index>
+  <!-- more can follow -->
+ </topic_indexes>
+ <topic_metadata>
+  <metadata name="getFoo"
+     description="A really dumb field"
+     enabled="True" friendlyName="Foo" />
+  <!-- more can follow -->
+ </topic_metadata>
+</atcttool>

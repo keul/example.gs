@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<object name="portal_properties">
+ <object name="navtree_properties" meta_type="Plone Property Sheet">
+  <property name="metaTypesNotToList" type="lines" purge="False">
+   <element value="ExampleType"/>
+  </property>
+ </object>
+ <object name="example_properties">
+  <property name="title">Totally useless properties</property>
+  <!--
+      properties are defined using Python
+  <property name="foo" type="boolean">True</property>
+  <property name="bar" type="string">xxx</property>
+  -->
+ </object>
+</object>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<portlets>
+
+   <portlet
+     addview="example.gs.portlets.ExamplePortlet"
+     title="Example portlet"
+     description="An example portlet"
+   />
+
+</portlets>

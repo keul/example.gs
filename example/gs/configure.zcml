@@ -1,0 +1,57 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="example.gs">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <cmf:registerDirectory name="example-gs"/>
+
+  <utility
+      provides=".interfaces.IFooUtility"
+      factory=".utility.FooUtility" />
+
+  <include package=".content" />
+  <include package=".portlets" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="example.gs"
+      directory="An example product for showing all Plone Generic Setup uninstall features"
+      description="Installs the example.gs package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="example.gs uninstall"
+      directory="profiles/uninstall"
+      description="Uninstalls the example.gs package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="example.gs.various"
+      title="example.gs: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="example.gs.setuphandlers.setupVarious">
+      <depends name="propertiestool"/>
+      <depends name="catalog"/>
+  </genericsetup:importStep>
+
+  <genericsetup:upgradeStep
+        title="Upgrade to example.gs to version 0.2"
+        description="Migrates to 1100"
+        source="1000"
+        destination="1100"
+        handler=".setuphandlers.migrateTo1100"
+        sortkey="1"
+        profile="example.gs:default"
+    />
+  
+  <!-- the super-trick for having multiple registered profiles -->
+  <!--include package=".foo" /-->
+  
+</configure>

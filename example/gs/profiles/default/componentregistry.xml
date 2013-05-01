@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<componentregistry>
+  <utilities>
+    <utility
+      interface="example.gs.interfaces.IFooUtility"
+      factory="example.gs.utility.FooUtility"
+    />
+  </utilities>
+</componentregistry>

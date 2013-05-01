@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<object name="portal_controlpanel"
+        xmlns:i18n="http://xml.zope.org/namespaces/i18n" i18n:domain="example.gs">
+    <configlet title="Example configuration"
+        action_id="Example" appId="example.gs"
+        category="Products"
+        condition_expr=""
+        icon_expr="string:$portal_url/maintenance_icon.png"
+        url_expr="string:${portal_url}/@@example-configuration"
+        visible="True"
+        i18n:attributes="title">
+        <permission>Manage portal</permission>
+    </configlet>
+</object>

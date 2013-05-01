@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<atcttool xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+ <topic_indexes>
+  <index name="getFoo"
+         remove="True">
+  </index>
+  <!-- more can follow -->
+ </topic_indexes>
+ <topic_metadata>
+  <metadata name="getFoo"
+            remove="True"/>
+  <!-- more can follow -->
+ </topic_metadata>
+</atcttool>
