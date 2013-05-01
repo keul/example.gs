@@ -20,8 +20,8 @@
   <genericsetup:registerProfile
       name="default"
       title="example.gs"
-      directory="An example product for showing all Plone Generic Setup uninstall features"
-      description="Installs the example.gs package"
+      directory="profiles/default"
+      description="An example product for showing all Plone Generic Setup uninstall features"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <genericsetup:registerProfile
